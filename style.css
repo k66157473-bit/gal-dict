@@ -1,61 +1,59 @@
 @import url('https://googleapis.com');
 
-/* 全体の基本設定 */
+/* 全体の基本設定：背景をスッキリした白、フォントを読みやすい太さに */
 html, body, [data-testid="stAppViewContainer"] {
     font-family: 'Noto Sans JP', sans-serif !important;
-    background-color: #fff5f7 !important;
+    background-color: #ffffff !important;
+    color: #111111 !important;
 }
 
-/* 検索窓ブロックの背景を透明化 */
-[data-testid="stTextInput"] {
-    margin-bottom: 20px;
+/* 検索窓の文字を大きく、枠線をくっきりさせて見やすく */
+[data-testid="stTextInput"] input {
+    font-size: 1.1rem !important;
+    border: 2px solid #333333 !important;
+    color: #111111 !important;
 }
 
-/* 区切り線 */
+/* はっきり見える太い区切り線 */
 .divider {
-    height: 2px;
-    background: linear-gradient(to right, #ff69b4, #ffb6c1);
-    margin: 20px 0;
+    height: 3px;
+    background-color: #222222;
+    margin: 24px 0;
     border-radius: 2px;
 }
 
-/* ギャル語カードのカスタムデザイン */
+/* ギャル語カード：背景を薄いグレーにして、文字とのコントラストを最大に */
 .gal-card {
-    background-color: #ffffff;
-    border-radius: 16px;
-    padding: 20px;
-    margin-bottom: 16px;
-    box-shadow: 0 4px 12px rgba(255, 105, 180, 0.08);
-    border-left: 6px solid #ff69b4;
-    transition: transform 0.2s ease;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 22px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-left: 6px solid #111111; /* 左の線を黒にして引き締める */
 }
 
-.gal-card:hover {
-    transform: translateY(-2px);
-}
-
-/* 単語のテキスト（数字やフォントが綺麗に見えるように調整） */
+/* 単語のテキスト：一番目立つように濃い紺（または黒）で大きく太く */
 .gal-word {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    color: #ff1493;
-    margin-bottom: 10px;
+    color: #002244;
+    margin-bottom: 12px;
 }
 
-/* 意味のテキスト */
+/* 意味のテキスト：真っ黒に近い色でハッキリと */
 .gal-meaning {
-    font-size: 1.0rem;
-    color: #333333;
-    line-height: 1.6;
-    margin-bottom: 8px;
+    font-size: 1.05rem;
+    color: #111111;
+    line-height: 1.7;
+    margin-bottom: 12px;
 }
 
-/* 例文のボックス */
+/* 例文のボックス：背景を少し明るいグレーにして枠線をハッキリ */
 .gal-example {
-    font-size: 0.95rem;
-    color: #555555;
-    background-color: #fff0f5;
-    padding: 10px 14px;
-    border-radius: 8px;
-    border: 1px dashed #ffb6c1;
+    font-size: 1.0rem;
+    color: #222222;
+    background-color: #eaeaea;
+    padding: 12px 16px;
+    border-radius: 6px;
+    border: 1px solid #cccccc;
 }
