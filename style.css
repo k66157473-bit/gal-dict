@@ -1,0 +1,61 @@
+@import url('https://googleapis.com');
+
+/* 全体の基本設定 */
+html, body, [data-testid="stAppViewContainer"] {
+    font-family: 'Noto Sans JP', sans-serif !important;
+    background-color: #fff5f7 !important;
+}
+
+/* 検索窓ブロックの背景を透明化 */
+[data-testid="stTextInput"] {
+    margin-bottom: 20px;
+}
+
+/* 区切り線 */
+.divider {
+    height: 2px;
+    background: linear-gradient(to right, #ff69b4, #ffb6c1);
+    margin: 20px 0;
+    border-radius: 2px;
+}
+
+/* ギャル語カードのカスタムデザイン */
+.gal-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 12px rgba(255, 105, 180, 0.08);
+    border-left: 6px solid #ff69b4;
+    transition: transform 0.2s ease;
+}
+
+.gal-card:hover {
+    transform: translateY(-2px);
+}
+
+/* 単語のテキスト（数字やフォントが綺麗に見えるように調整） */
+.gal-word {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ff1493;
+    margin-bottom: 10px;
+}
+
+/* 意味のテキスト */
+.gal-meaning {
+    font-size: 1.0rem;
+    color: #333333;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+/* 例文のボックス */
+.gal-example {
+    font-size: 0.95rem;
+    color: #555555;
+    background-color: #fff0f5;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px dashed #ffb6c1;
+}
